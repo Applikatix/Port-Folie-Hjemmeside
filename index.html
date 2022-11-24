@@ -12,7 +12,7 @@
 </head>
 <body style="background-color: #E8E8E8;">
 
-<!--Navbaren vil kollapse på små skærme-->
+<!--Navbaren vil kollapse paa smaa skaerme-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container">
     <a class="navbar-brand" href="index.html">Joseph Holland-Hale</a>
@@ -37,11 +37,13 @@
   </div>
 </nav>
 
-<!--<main> har den effekt at den ligner in side-->
-<main class="container text-bg-light shadow-sm py-3 px-5 px-sm-3 my-sm-3">
+<!--<main> har den effekt at den ligner in side undtagen på smaa skaerme ("text-bg-light shadow-sm")
+  <main> har padding på 3, undtagen på smaa skaerme ("py-3 px-sm-3") hvor siderne har padding paa 5 ("px-5")-->
+<main class="container text-bg-light shadow-sm py-3 px-4 my-sm-3">
   <!--Resume/Om mig-->
   <article>
     <h1 class="text-center">Om mig</h1>
+    <hr>
     <div>
       <p>Jeg er en koncentreret, dedikeret, struktureret og ansvarsfuld medarbejder.
         Jeg trives med praktisk og rutinepræget arbejde, hvor man skal bruge sine kompetencer og tillæres nye.
@@ -55,6 +57,7 @@
   <!--Kompetencer-->
   <section>
     <h1 class="text-center">IT kompetencer</h1>
+    <hr>
     <div class="row">
       <div class="col-sm">
         <h4>Back end</h4>
@@ -75,6 +78,8 @@
     <!--links til henholdsvis CV og Projekt. Formateret som cards-->
     <div class="row g-3">
       <div class="col">
+        <!--Fjerner understregning fra <a> elementet ("text-decoration-none")
+          Tvinger cardsne til at have same hoejde ("h-100")-->
         <a href="cv.html" class="text-decoration-none">
           <div class="card h-100 btn text-center">
             <div class="card-header display-3">CV</div>
